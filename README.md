@@ -6,6 +6,10 @@ engine](http://slim-lang.com), [SASS](http://sass-lang.com),
 [Compass](http://compass-style.org) and the [Middleman
 server](http://middlemanapp.com/).
 
+You can find an example of this repo running at:
+
+http://foundation-middleman-template.herokuapp.com/
+
 # Usage
 
 1. Clone this repo:
