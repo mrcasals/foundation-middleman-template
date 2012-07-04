@@ -1,0 +1,109 @@
+doctype
+/! paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/![if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/![if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/![if IE 8] <html class="no-js lt-ie9" lang="en">
+/! [if gt IE 8]><!
+html.no-js lang="en"
+  /! <![endif]
+  head
+    meta charset="utf-8"
+    /! Set the viewport width to device width for mobile
+    meta content="width=device-width" name="viewport"
+    title Welcome to Foundation
+    /! Included CSS Files
+    link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css"
+    /![if IE lt 9]
+      | <link href="/stylesheets/ie.css" rel="stylesheet" type="text/css" />
+    script src="javascripts/foundation/modernizr.foundation.js"
+    /! IE Fix for HTML5 Tags
+    /![if lt IE 9]
+      | <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  body
+    .row
+      .twelve.columns
+        h2 Welcome to Foundation
+        p This is version 3.0 released on June 29, 2012
+        hr/
+    .row
+      .eight.columns
+        h3 The Grid
+        /! Grid Example
+        .row
+          .twelve.columns
+            .panel
+              p This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.
+        .row
+          .six.columns
+            .panel
+              p Six columns
+          .six.columns
+            .panel
+              p Six columns
+        .row
+          .four.columns
+            .panel
+              p Four columns
+          .four.columns
+            .panel
+              p Four columns
+          .four.columns
+            .panel
+              p Four columns
+        h3 Tabs
+        dl.tabs
+          dd.active
+            a href="#simple1"
+          dd
+            a href="#simple2"
+          dd
+            a href="#simple3"
+        ul.tabs-content
+          li#simple1Tab.active This is simple tab 1's content. Pretty neat, huh?
+          li#simple2Tab This is simple tab 2's content. Now you see it!
+          li#simple3Tab This is simple tab 3's content. It's, you know...okay.
+        h3 Buttons
+        .row
+          .six.columns
+            p
+              a.small.button href="#"
+            p
+              a.button href="#"
+            p
+              a.large.button href="#"
+          .six.columns
+            p
+              a.small.alert.button href="#"
+            p
+              a.success.button href="#"
+            p
+              a.large.secondary.button href="#"
+      .four.columns
+        h4 Getting Started
+        p We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.
+        h4 Other Resources
+        p Once you've exhausted the fun in this document, you should check out:
+        ul.disc
+          li
+            a href="http://foundation.zurb.com/docs"
+            = succeed "Everything" do
+              br/
+            | you need to know about using the framework.
+          li
+            a href="http://github.com/zurb/foundation"
+            = succeed "Latest" do
+              br/
+            | code, issue reports, feature requests and more.
+          li
+            a href="http://twitter.com/foundationzurb"
+            = succeed "Ping" do
+              br/
+            | us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).
+    /! Included JS Files
+    script src="javascripts/jquery.min.js"
+    script src="javascripts/foundation/jquery.reveal.js"
+    script src="javascripts/foundation/jquery.orbit-1.4.0.js"
+    script src="javascripts/foundation/jquery.customforms.js"
+    script src="javascripts/foundation/jquery.placeholder.min.js"
+    script src="javascripts/foundation/jquery.tooltips.js"
+    script src="javascripts/app.js"
