@@ -9,7 +9,7 @@ server](http://middlemanapp.com/).
 # Usage
 
 1. Clone this repo:
-`$ git clone git://github.com/mrcasals/foundation-template.git`
+`$ git clone git://github.com/mrcasals/foundation-middleman-template.git`
 
 2. Install the dependencies:
 `$ bundle install`
